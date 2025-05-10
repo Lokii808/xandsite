@@ -1,0 +1,21 @@
+body * {
+  display: none !important;
+}
+
+body {
+  position: relative; /* Para garantir que o texto se posicione corretamente */
+  height: 100vh; /* Ocupa toda a altura da janela */
+}
+
+body::before {
+  content: "HACKED BY XANDSZ | HACKERONE POC";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o texto na tela */
+  color: red;
+  font-size: 80px; /* Aumenta o tamanho do texto */
+  font-weight: bold;
+  z-index: 9999; /* Garante que o texto fique visível acima de outros elementos */
+  text-align: center;
+}
